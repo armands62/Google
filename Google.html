@@ -162,6 +162,79 @@
         border: 1px solid #dadce0;
         color: #202124;
     }
+    .offered {
+        width: 1920px;
+        height: 28px;
+        font-size: small;
+        text-align: center;
+        font-family: Arial,sans-serif;
+        color: #222;
+        position: absolute;
+        top: 50%;
+    }
+    .offered_1 {
+        color:#1a0dab;
+        padding: 0px 3px;
+    }
+    .bottom {
+        width: 1920px;
+        height: 94px;
+        background:#f2f2f2;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        display: block;
+        font-size: 14px;
+        font-family: Arial,sans-serif;
+        color: #222;
+        position: fixed;
+        bottom: 0%;
+    }
+    .bottom_1 {
+        width: 1860 px;
+        height: 17px;
+        padding: 15px 30px;
+        border-bottom: 1px solid #dadce0;
+        font-size: 15px;
+        color: rgba(0,0,0,.54);
+        
+    }
+    .bottom_2 {
+        width: 1880px;
+        height: 46px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }.bottom_2_about {
+        width: 36.594px;
+        height: 16px;
+        padding: 15px;
+        color:#70757a ;
+        text-decoration: none;
+    }
+    .bottom_2_about:hover {
+        text-decoration: underline;
+    }
+    .bottom_2_abox {
+        width: 399.38px;
+        height: 46px;
+        color: #70757a;
+        display: block;
+        padding: 15px;
+        white-space: nowrap;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+    }
+    .bottom_2_bbox {
+        width: 240px;
+        height: 46px;
+        position: fixed;
+        right: 0%;
+        bottom:-3.5%;
+        padding: 15px;
+
+    }
 
 </style>
 
@@ -180,6 +253,30 @@
             <img class="mic" src="https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png">
         <button class="search_button" type="submit">Google Search</button>
         <button class="lucky_button" type="submit">I'm Feeling Lucky</button>
+        </div>
+    </form>
+    <div class="offered">
+        Google offered in:  
+        <a class="offered_1" href="https://www.google.lv/setprefs?sig=0_8XW57IBM2EmWGwaR3LOXMxBMmzw%3D&amp;hl=lv&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiTnOPA2uLuAhUTHHcKHfV1AzkQ2ZgBCA4">latviešu</a>
+        <a class="offered_1" href="https://www.google.lv/setprefs?sig=0_8XW57IBM2EmWGwaR3LOXMxBMmzw%3D&amp;hl=lt&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiTnOPA2uLuAhUTHHcKHfV1AzkQ2ZgBCA8">lietuvių</a>
+        <a class="offered_1" href="https://www.google.lv/setprefs?sig=0_8XW57IBM2EmWGwaR3LOXMxBMmzw%3D&amp;hl=ru&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiTnOPA2uLuAhUTHHcKHfV1AzkQ2ZgBCBA">русский</a>
+    </div>
+    <div class="bottom">
+        <div class="bottom_1">Latvia</div>
+        <div class="botttom_2">
+            <div class="bottom_2_abox">
+                <a class="bottom_2_about" href="https://www.google.lv/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">About</a>
+                <a class="bottom_2_about" href="https://www.google.lv/intl/en_lv/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="bottom_2_about" href="https://www.google.lv/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a class="bottom_2_about" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+            </div>
+            <div class="bottom_2_bbox">
+                <a class="bottom_2_about" href="https://policies.google.com/privacy?hl=en-LV&fg=1">Privacy</a>
+                <a class="bottom_2_about" href="https://policies.google.com/terms?hl=en-LV&fg=1">Terms</a>
+                <a class="bottom_2_about" href="#">Settings</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
