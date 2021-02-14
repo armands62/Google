@@ -6,14 +6,26 @@
 <style>
     .google_logo {
         width: 271px;
+    }
+    .google_box {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 20%;
+        flex-shrink: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .head_box {
         position: absolute;
-        left: 825px;
-        top: 200px;
+        top: 0%;
+        right: 0%;
+        width: 255px;
+        height: 40px;
+        padding-right: 4px;
+
     }
     .gmail {
-        position: absolute;
-        left:86.5%;
-        top:2.6%;
         font-size: 13px;
         font-family: Arial, sans-serif;
         text-decoration: none;
@@ -25,9 +37,8 @@
         cursor: pointer;
     }
     .images {
-        position: absolute;
-        left: 89%;
-        top:2.6%;
+        padding-left: 15px;
+        padding-right: 15px;
         font-size: 13px;
         font-family: Arial, sans-serif;
         text-decoration: none;
@@ -40,10 +51,9 @@
     }
     .apps_logo {
         width:25px;
-        position: absolute;
-        left: 92%;
-        top:1.2%;
         padding: 8px;
+        position: relative;
+        top: 40%;
     }
     .apps_logo:hover {
         cursor: pointer;
@@ -53,9 +63,6 @@
 
     }
     .sign_in {
-        position: absolute;
-        left: 95%;
-        top: 1%;
         font-size: 14px;
         font-family: 'Open Sans','Roboto',Helvetica,Arial,sans-serif;
         border: 7px solid #2b7de9;
@@ -67,6 +74,7 @@
         text-decoration: none;
         border-radius: 4px;
         padding: 5px 10px;
+        margin: 8px;
     }
     .sign_in:hover {
         cursor: pointer;
@@ -75,24 +83,34 @@
         box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
         border: 7px solid transparent;
     }
+    .search_box {
+        width: auto;
+        height: 140px;
+        margin:0 auto;
+        padding-top: 6px;
+        position:relative;
+        top: 23%;
+        left: 0%;
+        text-align: center;
+    }
     .text_box {
-        position: absolute;
-        left: 35%;
-        top: 33%;
         border: 1px solid #dfe1e5;
         border-radius: 24px;
         display: flex;
         outline: none;
-        flex: 100%;
         height: 46px;
         padding:5px 8px 0 16px;
-        width: 584px;
+        width: auto;
+        max-width: 584px;
+        position:sticky;
+        left: 34%;
     }
     .text {
-        position: absolute;
-        left: 10%;
-        top:18%;
+        position:relative;
+        left: 5%;
+        top: 15%;
         width: 487px;
+        max-width: 487px;
         height: 34px;
         background-color: transparent;
         border: none;
@@ -105,19 +123,17 @@
         width: 20px;
         height: 20px;
         position: absolute;
+        left: 2%;
         top: 30%;
     }
     .mic{
         width: 28px;
         height: 28px;
-        position: absolute;
-        left: 93%;
-        top: 24%;
+        position:absolute; 
+        right:3%;
+        top: 23%;
     }
     .search_button {
-        position: absolute;
-        left: 25%;
-        top: 200%;
         background-color: #f3f3f3;
         border: 1px solid #f3f3f3;
         border-radius: 4px;
@@ -131,6 +147,9 @@
         text-align: center;
         cursor: pointer;
         outline: none;
+        margin-top:18px ;
+        margin-bottom: 11px;
+        margin-right: 4px;
     }
     .search_button:hover {
         box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
@@ -139,9 +158,6 @@
         color: #202124;
     }
     .lucky_button {
-        position: absolute;
-        left: 47%;
-        top: 200%;
         background-color: #f3f3f3;
         border: 1px solid #f3f3f3;
         border-radius: 4px;
@@ -163,14 +179,14 @@
         color: #202124;
     }
     .offered {
-        width: 1920px;
+        width: auto;
         height: 28px;
         font-size: small;
         text-align: center;
         font-family: Arial,sans-serif;
         color: #222;
-        position: absolute;
-        top: 50%;
+        position: relative;
+        top: 23%;
     }
     .offered_1 {
         color:#1a0dab;
@@ -243,17 +259,21 @@
     <link href="https://cdn2.iconfinder.com/data/icons/social-media-2259/512/search-512.png">
 </head>
 <body>
-    <img class="google_logo" src="https://res.cloudinary.com/demo/image/fetch/fl_png8/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    <a class="gmail" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a> <a class="images" href="https://www.google.lv/imghp?hl=en&tab=wi&ogbl">Images</a> <a href="#"><img class="apps_logo" src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u"></a>
-    <a class="sign_in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.lv/imghp%3Fhl%3Den%26tab%3Dwi%26ogbl&ec=GAZAAg">Sign In</a>
-    <form>
+    <div class="google_box">
+        <img class="google_logo" src="https://res.cloudinary.com/demo/image/fetch/fl_png8/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="head_box">
+        <a class="gmail" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a> <a class="images" href="https://www.google.lv/imghp?hl=en&tab=wi&ogbl">Images</a> <a href="#"><img class="apps_logo" src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u"></a>
+        <a class="sign_in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.lv/imghp%3Fhl%3Den%26tab%3Dwi%26ogbl&ec=GAZAAg">Sign In</a>
+    </div>
+    <form class="search_box">
         <div class="text_box">
             <input class="text" type="text">
             <img class="search_icon" src="https://icon-library.com/images/google-search-icon/google-search-icon-13.jpg">
             <img class="mic" src="https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png">
+        </div>
         <button class="search_button" type="submit">Google Search</button>
         <button class="lucky_button" type="submit">I'm Feeling Lucky</button>
-        </div>
     </form>
     <div class="offered">
         Google offered in:  
