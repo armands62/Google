@@ -1,6 +1,7 @@
 <html>
     <style>
         .search_form {
+            background: #fff;
             position: absolute;
             top: 20px;
             width: 100%;
@@ -8,7 +9,7 @@
             display: block;
         }
         .form {
-            width: 1109px;
+            width: 1903px;
             height: 46px;
             display: block;
         }
@@ -80,6 +81,262 @@
             position: relative;
             top: 28%;
         }
+        .search_right {
+            position: relative;
+            top: -100%;
+            right: 1%;
+            float:right;
+            padding-left: 32px;
+            box-sizing: 48px;
+            height: 48px;
+            justify-content: flex-end;
+            vertical-align: middle;
+            align-items: center;
+            display: flex;
+        }
+        .sign_in {
+            font-size: 14px;
+            font-family: 'Open Sans','Roboto',Helvetica,Arial,sans-serif;
+            border: 7px solid #2b7de9;
+            font-weight: 500;
+            color: #fff;
+            background: #2b7de9;
+            box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+            outline: none;
+            text-decoration: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            margin: 8px;
+        }
+        .sign_in:hover {
+            cursor: pointer;
+            color: #fff;
+            background:#4683ea;
+            box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+            border: 7px solid transparent;
+        }
+        .apps_logo {
+        width:25px;
+        padding: 8px;
+        position: relative;
+        top: 40%;
+        }
+        .apps_logo:hover {
+            cursor: pointer;
+            background-color: rgba(60,64,67,0.08);
+            border-radius: 50%;
+            padding: 8px;
+        }
+        .navigation {
+            background: #fff;
+            border-bottom:1px solid #ebebeb;
+            margin-top: -21px;
+            outline-width: 0;
+            outline: none;
+            position: relative;
+            top: 10%;
+            height: 58px;
+        }
+        .navigation_box {
+            float: left;
+            position: relative;
+            white-space: nowrap;
+            align-items: baseline;
+            display: flex;
+            justify-content: space-between;
+            width: 832px;
+            height: 58px;
+            max-width: 832px;
+        }
+        .navigation_main {
+            position: relative;
+            left: 20%;
+            width: 621px;
+            height: 58px;
+
+        }
+        .navigation_all {
+            color: #5f6368;
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 12px 12px 10px;
+            height: 16px;
+            line-height: 16px;
+            margin: 11px 1px 0;
+            font-size: 13px;
+            font-family: Arial,sans-serif;
+        }
+        .navigation_all_1 {
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 12px 12px 10px;
+            height: 16px;
+            line-height: 16px;
+            margin: 11px 1px 0;
+            font-size: 13px;
+            font-family: Arial,sans-serif;
+            color: #1a73e8;
+            border-bottom: 3px solid #1a73e8;
+        }
+        .navigation_settings {
+            position: relative;
+            width: 125px;
+        }
+        .navigation_all_2 {
+            color:#5f6368 ;
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 12px 12px 10px;
+            height: 16px;
+            line-height: 16px;
+            margin: 11px 1px 0;
+            font-size: 13px;
+            font-family: Arial,sans-serif;
+        }
+        .appbar {
+            background: #fff;
+            min-width: 1261px;
+            width: 100%;
+            height: 43px;
+            position: relative;
+            top: 10.5%;
+        }
+        .result-stats {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-right: 8px;
+            line-height: 43px;
+            color: #70757a;
+            font-family: Arial,sans-serif;
+            font-size: 14px;
+            position: relative;
+            left: 9%;
+        }
+        .main {
+            position: relative;
+            top: 11%;
+            margin-top: 0px;
+            clear: both;
+            width: 1903px;
+            height: 1651px;
+            margin-left: 9%;
+        }
+        .rvt_lv {
+            width: 600px;
+            height: 140px;
+            line-height: 1.2;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 20px;
+            line-height: 1.3;
+            letter-spacing: 0.1px;
+            font-weight: normal;
+            color: #1a0dab;
+            font-family: Arial,sans-serif;
+            text-decoration: none;
+        }
+        h2 {
+            color: #4d5156;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        h3 {
+            font-size: 14px;
+            color: #1a0dab;
+            margin-right: 3px;
+            text-decoration: none;
+        }
+        h5 {
+            position: relative;
+            top: 8%;
+            font-size:14px ;
+            color: #202124;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+        }
+        .options {
+            width: 600px;
+            height: 22px;
+            text-decoration: none;
+        }
+        .stundu_saraksts {
+            width: 600px;
+            height: 97px;
+        }
+        .uznemsana {
+            width: 600px;
+            height: 97px;
+        }
+        .bottom {
+        width: 1920px;
+        height: 94px;
+        background:#f2f2f2;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        display: block;
+        font-size: 14px;
+        font-family: Arial,sans-serif;
+        color: #222;
+        position: fixed;
+        bottom: 0%;
+        margin-left: none;
+    }
+        .bottom_1 {
+            width: 1860 px;
+            height: 17px;
+            padding: 15px 30px;
+            border-bottom: 1px solid #dadce0;
+            font-size: 15px;
+            color: rgba(0,0,0,.54);
+            margin-left: none;
+        }
+        .bottom_2 {
+            width: 1880px;
+            height: 46px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px 20px;
+            margin-left: none;
+        }
+        .bottom_2_about {
+            width: 36.594px;
+            height: 16px;
+            padding: 15px;
+            color:#70757a ;
+            text-decoration: none;
+            margin-left: none;
+        }
+        .bottom_2_about:hover {
+            text-decoration: underline;
+        }
+        .bottom_2_abox {
+            width: 399.38px;
+            height: 46px;
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            margin-left: none;
+        }
+        .bottom_2_bbox {
+            width: 240px;
+            height: 46px;
+            position: fixed;
+            right: 0%;
+            bottom:-3.5%;
+            padding: 15px;
+            margin-left: none;
+        }
+        
     </style>
     <head>
         <title>rvt - Google Search</title>
@@ -100,12 +357,110 @@
                         <div class="buttons">
                             <img class="clear_button" src="https://www.pngkey.com/png/full/798-7984856_remix-of-close-icon-grey-clear-background-x.png">
                         </div>
-
                     </div>
                 </div>
+                <div class="search_right">
+                    <a href="#"><img class="apps_logo" src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u"></a>
+                    <a class="sign_in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.lv/imghp%3Fhl%3Den%26tab%3Dwi%26ogbl&ec=GAZAAg">Sign In</a>
+                </div>
             </form>
+        </div>
+        <div class="navigation">
+            <div class="navigation_box">
+                <div class="navigation_main">
+                    <a class="navigation_all_1" href="#">All</a>
+                    <a class="navigation_all" href="#">Images</a>
+                    <a class="navigation_all" href="#">Maps</a>
+                    <a class="navigation_all" href="#">Videos</a>
+                    <a class="navigation_all" href="#">News</a>
+                    <a class="navigation_all" href="#">More</a>
+                </div>
+                <div class="navigation_settings">
+                    <a class="navigation_all_2" href="#">Settings</a>
+                    <a class="navigation_all_2" href="#">Tools</a>
+                </div>
+            </div>
+        </div>
+        <div class="appbar">
+            <div class="result-stats">
+                About 10,300,000 results (0.63 seconds)
+            </div>
 
         </div>
-
+        <div class="main">
+            <div class="rvt_lv">
+                <h5>www.rvt.lv</h5>
+                <a href="https://www.rvt.lv/"><h1>Rīgas Valsts tehnikums</h1></a>
+                <h2>Arī PIKC “Rīgas Valsts tehnikums” Dzelzceļa nodaļa sadarbībā ar ... Raksti uz solveiga.keistere@rvt.lv, lai pieteiktu savu klasi vai skolu uz tiešsaistes karjeras ...</h2>
+                <div class="options">
+                    <a class="h3" href="#">Stundu saraksts</a> <a class="h3" href="#">Uzņemšana</a> <a class="h3" href="#">Profesijas</a> <a class="h3" href="#">Kontakti</a>
+                </div>
+            </div>
+            <div class="stundu_saraksts">
+                <h5>www.rvt.lv-macibu-stundu-saraksts</h5>
+                <a href="#"><h1>Stundu saraksts - Rīgas Valsts tehnikums</h1></a>
+                <h2>RVT 100 gadi. LATVIJAS DZELCEĻŠ. LDZ. Sociālie tīkli. PIKC RVT | TV ... Bibliotēka · Programma "Latvijas skolas soma" · Dienesta viesnīcas · PIKC RVT | TV ...</h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-uznemsana</h5>
+                <a href="#"><h1>Uzņemšana - Rīgas Valsts tehnikums</h1></a>
+                <h2>RVT 100 gadi. Latvijas dzelzceļš. LDZ. Sociālie tīkli. PIKC RVT | TV. Erasmus+ mobilitātes harta. harta. Šajā kategorijā nav rakstu. Ja šajā lapā tiek rādītas ...</h2>
+            </div>
+            <div class="uznemsana">
+                <h5>ww.rvt.lv-kontakti</h5>
+                <a href="#"><h1>Kontakti - Rīgas Valsts tehnikums</h1></a>
+                <h2>Direktore Dagnija Vanaga Telefons 67324146 dagnija.vanaga[at]rvt.lv. Direktora vietniece mācību darba organizācijā. Dace Rozenblate Mob.tel. 27260013</h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-nodalas</h5>
+                <a href="#"><h1>Par mums - Rīgas Valsts tehnikums</h1></a>
+                <h2>RVT īsteno trešā profesionālās kvalifikācijas līmeņa izglītības programmas, metodiskā centra un ārpus formālās izglītības sistēmas iegūtās profesionālās ...
+                </h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-macibas-profesijas2019</h5>
+                <a href="#"><h1>Profesijas - Rīgas Valsts tehnikums</h1></a>
+                <h2>RVT 100 gadi. Sociālie tīkli. PIKC RVT | TV ... Bibliotēka · Programma "Latvijas skolas soma" · Dienesta viesnīcas · PIKC RVT | TV · Ārpus mācībām arhīvs.
+                </h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-content-article</h5>
+                <a href="#"><h1>RVT - Rīgas Valsts tehnikums</h1></a>
+                <h2>Dzelzceļa profesijas. I. Lokomotīvju saimniecības tehniķis. Trešais profesionālās kvalifikācijas līmenis (3. PKL) (atbilst ceturtajam Latvijas kvalifikāciju ...
+                </h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-galerijas</h5>
+                <a href="#"><h1>Galerijas - Rīgas Valsts tehnikums</h1></a>
+                <h2>PIKC „Rīgas Valsts tehnikums” izstādē „Skola2020” (39). Loģistikas darbinieka diena tehnikumā (16). PIKC RVT matemātikas pēcpusdiena „Jautrie cipari” (27).</h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-skolotaju-konsultacijas</h5>
+                <a href="#"><h1>Skolotāju konsultācijas - Rīgas Valsts tehnikums</h1></a>
+                <h2>RVT 100 gadi. LATVIJAS DZELCEĻŠ. LDZ. Sociālie tīkli. PIKC RVT | TV. Erasmus+ mobilitātes harta. harta. Skolotāju konsultāciju grafiks. Skolotāju konsultāciju ...
+                </h2>
+            </div>
+            <div class="uznemsana">
+                <h5>www.rvt.lv-nodalas-dzelszcelnieku-nodala-skolotaji</h5>
+                <a href="#"><h1>Skolotāji - Rīgas Valsts tehnikums</h1></a>
+                <h2>RVT 100 gadi. LATVIJAS DZELCEĻŠ. LDZ. Sociālie tīkli. PIKC RVT | TV. Erasmus+ mobilitātes harta. harta. Dzelzceļa nodaļa. Jaunumi · Izglītības programma ...
+                </h2>
+            <div class="bottom">
+                <div class="bottom_1">Latvia</div>
+                <div class="botttom_2">
+                    <div class="bottom_2_abox">
+                        <a class="bottom_2_about" href="https://www.google.lv/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">About</a>
+                        <a class="bottom_2_about" href="https://www.google.lv/intl/en_lv/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                        <a class="bottom_2_about" href="https://www.google.lv/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                        <a class="bottom_2_about" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+                    </div>
+                    <div class="bottom_2_bbox">
+                        <a class="bottom_2_about" href="https://policies.google.com/privacy?hl=en-LV&fg=1">Privacy</a>
+                        <a class="bottom_2_about" href="https://policies.google.com/terms?hl=en-LV&fg=1">Terms</a>
+                        <a class="bottom_2_about" href="#">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
